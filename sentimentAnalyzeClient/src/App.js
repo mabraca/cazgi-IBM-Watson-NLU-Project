@@ -37,29 +37,6 @@ class App extends React.Component {
     }
   }
 
-  // sendForSentimentAnalysis = () => {
-  //   this.setState({sentiment:true});
-  //   let url = this.mainURL;
-
-  //   if(this.state.mode === "url") {
-  //     url = url+"/url/sentiment?url="+document.getElementById("textinput").value;
-  //   } else {
-  //     url = url+"/text/sentiment?text="+document.getElementById("textinput").value;
-  //   }
-  //   fetch(url).then((response)=>{
-  //       response.text().then((data)=>{
-  //       this.setState({sentimentOutput:data});
-  //       let output = data;
-  //       if(data === "positive") {
-  //         output = <div style={{color:"green",fontSize:20}}>{data}</div>
-  //       } else if (data === "negative"){
-  //         output = <div style={{color:"red",fontSize:20}}>{data}</div>
-  //       } else {
-  //         output = <div style={{color:"orange",fontSize:20}}>{data}</div>
-  //       }
-  //       this.setState({sentimentOutput:output});
-  //     })});
-  // }
 
   sendForSentimentAnalysis = () => {
     this.setState({sentiment:true});
